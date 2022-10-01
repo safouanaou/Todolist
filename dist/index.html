@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/dist/main.js"></script>
+    <script src="/dist/main.js" defer></script>
     <link rel="stylesheet" href="../dist/style.css">
     <script src="https://kit.fontawesome.com/b86f8b8627.js" crossorigin="anonymous"></script>
     <title>todolist</title>
@@ -14,17 +14,36 @@
         <h1>Todo List</h1>
     </header>
         <div class="sidebar">
-            <button><i class="fa-solid fa-inbox"></i>  Inbox</button>
-            <button><i class="fa-solid fa-calendar-days"></i>  Today</button>
-            <button><i class="fa-regular fa-calendar"></i> This week</button>
+            <button id="inbox"><i class="fa-solid fa-inbox"></i>  Inbox</button>
+            <button id="today"><i class="fa-solid fa-calendar-days"></i>  Today</button>
+            <button id="thisweek"><i class="fa-regular fa-calendar"></i> This week</button>
 
             <div class="projects">
                 <h3>Projects</h3>
-                <a href="#">+ Add Project</a>
+                <a href="#" id="addproject">+ Add Project</a>
             </div>
         </div>
         <div class="board">
-           
+
+            <div class="screen">
+                <h2>inbox</h2>
+
+                    <div id="tasks">
+                        
+                    </div>
+                
+                    <div class="add-task-input">
+                        <input type="text" name="text" id="input-task" value="">
+                        <div>
+                            <button id="add">Add</button>
+                        <button id="cancel">Cancel</button>
+                        </div>
+                        
+                    </div>
+
+                    <button id="addtask">+ Add Task</button>
+              
+            </div>
         </div>
     <footer>
         <p>Copyright 2022 safouanaou</p>
