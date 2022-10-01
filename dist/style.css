@@ -33,7 +33,7 @@ header{
 }
 
 .sidebar button{
-    width: 85%;
+    width: 80%;
     border-style: none;
     background-color: transparent;
     margin: 10px 0px;
@@ -65,6 +65,58 @@ header{
 
 }
 
+.screen{
+    margin-left: 300px;
+    margin-top: 50px;
+    height: 80vh;
+}
+
+.screen input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+   background-color: rgb(255, 255, 255);
+   appearance: none;
+}
+
+.screen input[type='checkbox']:checked{
+    background-color: rgb(124, 121, 117);
+}
+
+.screen div{
+    display: flex;
+    padding: 10px;
+}
+.screen div:hover{
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+}
+
+#addtask{
+    padding: 10px !important;
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    border-radius: 8px ;
+    width: 300px;
+    text-align: left;
+}
+
+#addtask:hover{
+    background-color: rgb(233, 233, 233);
+}
+
+.screen h2{
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.screen p{
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
 .projects{
     width: 100%;
     display: flex;
@@ -72,6 +124,7 @@ header{
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
+    overflow: hidden;
 
 }
 
@@ -87,8 +140,16 @@ header{
     color: black;
     font-size: 1.4rem;
     font-weight: 400;
-    margin-left: 20%;
+    margin-left: 10%;
+    padding: 10px;
+    width: 80%;
+    border-radius: 6px;
 
+}
+
+.projects a:hover{
+    background-color: rgb(201, 201, 201);
+    
 }
 
 footer{
@@ -98,5 +159,70 @@ footer{
     grid-column: span 6;
     grid-row: span 1;
     text-align: center;
+
+}
+
+
+.add-task-input{
+    z-index: -1;
+    position: absolute;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.add-task-input div{
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.add-task-input input{
+    position: relative;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+.add-task-input button{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 10px !important;
+    border: none;
+    background: none;
+    border-radius: 8px ;
+    width: 300px;
+}
+.add-task-input button:first-child{
+    background-color: rgb(115, 246, 126);
+    margin-right: 5px;
+
+}
+.add-task-input button:last-child{
+    background-color: rgb(248, 165, 165);
+
+}
+
+#input-task{
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+
+#tasks{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#add{
+}
+
+#cancel{
 
 }
